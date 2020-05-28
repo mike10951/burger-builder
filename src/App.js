@@ -1,11 +1,16 @@
 import React from 'react';
 
-function App() {
+import Layout from './components/Layout/Layout';
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
+
+const App = () => {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <>
+      <Layout>
+        <BurgerBuilder></BurgerBuilder>
+      </Layout>
+    </>
   );
-}
+};
 
 export default App;
